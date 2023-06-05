@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "TT";
+  src: url("../../assets/fonts/TTCommonsRegular.woff2") format("woff2"),
+    url("../../assets/fonts/TTCommonsRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RedCollar";
+  src: url("../../assets/fonts/Redcollar.woff2") format("woff2"),
+    url("../../assets/fonts/Redcollar.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+:root {
+  --color-bg: #000;
+  --color-bg-info: #f51b1b;
+  --color-text: #fff;
+  --color-hover: #492f2f;
+}
+
+body {
+  background-color: var(--color-bg);
+  font-family: "TT", sans-serif;
+  color: var(--color-text);
+  padding-bottom: 40px;
+  font-size: 18px;
+}
+
+.p-reset {
+  margin: 0;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1470px;
+}

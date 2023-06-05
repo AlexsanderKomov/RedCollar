@@ -1,0 +1,5 @@
+@import "normalaiz.css";
+@import "./components/_settings.css";
+@import "./components/_header.css";
+@import "./components/_about.css";
+@import "./components/_media.css";

@@ -1,0 +1,167 @@
+.about {
+  display: flex;
+}
+
+.about__me {
+  position: relative;
+  flex: 0 0 322px;
+  margin-right: 31px;
+  min-height: 780px;
+  background-color: black;
+}
+
+.about__photo {
+  position: relative;
+  min-height: 355px;
+}
+
+.about__info {
+  position: relative;
+  top: -30px;
+  min-height: 461px;
+  padding: 24px 40px;
+  border-radius: 24px 24px 0px 0px;
+  background-color: var(--color-bg-info);
+  z-index: 2;
+}
+
+.about__info::before {
+  content: "";
+  position: absolute;
+  top: -19px;
+  left: 50%;
+  width: 60px;
+  height: 19px;
+  transform: translateX(-50%);
+  background-image: url("../../assets/images/union.svg");
+}
+
+.about__name {
+  font-family: "RedCollar";
+  margin-bottom: 8px;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.about__from {
+  margin-bottom: 40px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contacts__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contacts__name {
+  padding-left: 36px;
+  font-size: 20px;
+  line-height: 24px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  transition: color 0.3s ease-in-out;
+}
+
+.contacts__name:hover {
+  color: var(--color-hover);
+}
+
+.contacts__name-phone {
+  background-image: url("../../assets/images/phone.png");
+}
+
+.contacts__name-mail {
+  background-image: url("../../assets/images/mail.png");
+}
+
+.contacts__name-tg {
+  background-image: url("../../assets/images/tg.png");
+}
+
+.contacts__name-gh {
+  background-image: url("../../assets/images/gh.png");
+}
+
+.about__skill {
+  flex: 1 0;
+  padding-top: 8px;
+  background-color: black;
+  min-height: 780px;
+}
+
+.about__descr {
+  margin-bottom: 32px;
+  max-width: 690px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.education__list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 46px 28px;
+  min-height: 656px;
+  border: 1px solid var(--color-text);
+}
+
+.education__list::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 57px;
+  width: 60px;
+  height: 20px;
+  background-image: url("../../assets/images/arrow.svg");
+}
+
+.education__item {
+  display: flex;
+}
+
+.education__item:not(:last-child) {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(253, 253, 253, 0.4);
+}
+
+.education--more__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.education__name {
+  min-width: 124px;
+  margin-right: 72px;
+  font-size: 16px;
+  line-height: 1;
+  font-family: "Redcollar";
+}
+
+.education--more__title {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.education--more__descr,
+.education--more__yers {
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+  opacity: 0.4;
+}
+
+.education--more__list--skill {
+  display: flex;
+  flex-direction: row;
+}
+
+.education--more__item--skill:not(:last-child) {
+  margin-right: 32px;
+}
